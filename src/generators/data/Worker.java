@@ -151,7 +151,7 @@ public class Worker extends AbstractAsynchronousWorker{
 										"CONSTRUCT {?s ?p ?o}"
 										 + "FROM <"+endpointUrl+"/datasets> " 
 										 + "WHERE {?s  a  <"+c+"> ."
-										 		+ "?s ?p ?o . + "
+										 		+ "?s ?p ?o . "
 										 		+ "FILTER (!isBlank(?s) && !isBlank(?o))"
 										 	+ "}"
 										 + "ORDER BY ASC (?s)"
